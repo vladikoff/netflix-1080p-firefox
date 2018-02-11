@@ -1,0 +1,15 @@
+{
+  "name": "netflix-1080p-foxfire",
+  "version": "1.0.0",
+  "description": "Based on [https://github.com/truedread/netflix-1080p](https://github.com/truedread/netflix-1080p)",
+  "main": "background.js",
+  "scripts": {
+    "start": "web-ext run -s src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "web-ext": "^2.4.0"
+  }
+}
