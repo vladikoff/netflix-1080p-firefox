@@ -1,4 +1,4 @@
-# netflix-1080p-foxfire
+# netflix-1080p-firefox
 
 * Add-on: https://addons.mozilla.org/en-US/firefox/addon/force-1080p-netflix/
 * SEO: "Watch Netflix in 1080p in Firefox web extension download now"
