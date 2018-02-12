@@ -1,0 +1,5 @@
+1.1
+    - remove unused permissions
+    - clean up file request per AMO review
+1.0
+    - initial version

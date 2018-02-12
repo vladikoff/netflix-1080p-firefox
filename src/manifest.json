@@ -2,20 +2,17 @@
   "manifest_version": 2,
   "name": "Netflix 1080p",
   "description": "Forces 1080p playback for Netflix in Firefox. Based on truedread/netflix-1080p.",
-  "version": "1.0",
-  "author": "truedread",
+  "version": "1.1",
+  "author": "truedread and vladikoff",
   "background": {
     "scripts": ["background.js"]
   },
   "web_accessible_resources": [
-    "cadmium-playercore-5.0008.544.011-1080p.js"
+    "cadmium-playercore-1080p.js"
   ],
   "permissions": [
-    "tabs",
     "webRequest",
-    "webNavigation",
     "webRequestBlocking",
-    "management",
     "*://assets.nflxext.com/en_us/ffe/player/html/*",
     "*://www.assets.nflxext.com/en_us/ffe/player/html/*",
     "*://netflix.com/watch/*",
