@@ -6,8 +6,8 @@ browser.webRequest.onBeforeRequest.addListener(
     };
   }, {
     urls: [
-      "*://assets.nflxext.com/en_us/ffe/player/html/*",
-      "*://www.assets.nflxext.com/en_us/ffe/player/html/*"
+      "*://assets.nflxext.com/*/ffe/player/html/*",
+      "*://www.assets.nflxext.com/*/ffe/player/html/*"
     ]
   }, ["blocking"]
 );
