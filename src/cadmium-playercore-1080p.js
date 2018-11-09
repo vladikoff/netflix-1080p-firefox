@@ -34551,6 +34551,7 @@ var a9B = {
 
                                 for (var i = 0; i < f.videoTracks[0].downloadables.length; i++) {
                                     if (f.videoTracks[0].downloadables[i].contentProfile == "playready-h264mpl40-dash") {
+                                        console.log("Manifest not locked to Edge, commencing normal playback");
                                         edgeLocked = false;
                                         break;
                                     }
@@ -34565,6 +34566,10 @@ var a9B = {
                                     edge_manifest.playbackContextId = f.playbackContextId;
                                     edge_manifest.drmContextId = f.drmContextId;
                                     f = edge_manifest;
+                                }
+
+                                for (var i = 0; i < f.audioTracks.length; i++) {
+                                    f.audioTracks[i].language += ' - ' + f.audioTracks[i].channelsLabel;
                                 }
                             }
                             f.success ? (p.EUa(f, a, a.Aca, a.Cca), b(r.Fa), g()) : b(f.result);
