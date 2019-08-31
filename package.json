@@ -1,6 +1,6 @@
 {
   "name": "netflix-1080p-foxfire",
-  "version": "1.8.0",
+  "version": "1.10.0",
   "description": "Based on [https://github.com/truedread/netflix-1080p](https://github.com/truedread/netflix-1080p)",
   "main": "background.js",
   "scripts": {
