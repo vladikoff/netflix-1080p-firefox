@@ -6,8 +6,20 @@ script_urls = [
 ]
 
 urls = [
-    'get_manifest.js'
+    'msl_client.js',
+    'netflix_max_bitrate.js'
 ]
+
+// very messy workaround for accessing browser's storage outside of background / content scripts
+browser.storage.sync.get(['use6Channels', 'setMaxBitrate'], function(items) {
+    var use6Channels = items.use6Channels;
+    var setMaxBitrate = items.setMaxBitrate;
+    var mainScript = document.createElement('script');
+    mainScript.type = 'application/javascript';
+    mainScript.text = 'var use6Channels = ' + use6Channels + ';' + '\n' 
+	                + 'var setMaxBitrate = ' + setMaxBitrate + ';';
+    document.documentElement.appendChild(mainScript);
+});
 
 for (var i = 0; i < script_urls.length; i++) {
     var script = document.createElement('script');
