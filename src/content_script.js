@@ -6,6 +6,16 @@ urls = [
     'get_manifest.js'
 ]
 
+
+// very messy workaround for accessing chrome storage outside of background / content scripts
+browser.storage.sync.get(['use6Channels'], function(items) {
+    var use6Channels = items.use6Channels;
+    var mainScript = document.createElement('script');
+    mainScript.type = 'application/javascript';
+    mainScript.text = 'var use6Channels = ' + use6Channels + ';';
+    document.documentElement.appendChild(mainScript);
+});
+
 for (var i = 0; i < urls.length; i++) {
     var mainScriptUrl = chrome.extension.getURL(urls[i]);
 

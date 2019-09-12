@@ -66,7 +66,7 @@ var profiles = [
 ];
 
 
-if(window.use6Channels)
+if(use6Channels)
     profiles.push("heaac-5.1-dash");
 
 var messageid = Math.floor(Math.random() * 2**52);

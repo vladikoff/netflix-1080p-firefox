@@ -28,6 +28,18 @@
     "*://assets.nflxext.com/*/ffe/player/html/*",
     "*://www.assets.nflxext.com/*/ffe/player/html/*",
     "*://netflix.com/*",
-    "*://www.netflix.com/*"
-  ]
+    "*://www.netflix.com/*",
+    "storage"
+  ],
+
+  "options_ui": {
+    "page": "options.html"
+  },
+
+  "applications": {
+    "gecko": {
+      "id": "netflix-1080p-firefox@vladikoff"
+    }
+  }
+
 }
